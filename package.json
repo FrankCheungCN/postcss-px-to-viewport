@@ -1,14 +1,16 @@
 {
-  "name": "postcss-px-to-viewport-rxdey",
+  "name": "postcss-px-to-viewport-multichange",
   "description": "A CSS post-processor that converts px to viewport units (vw, vh, vmin, vmax).",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "author": "rxdey",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@github.com:Rxdey/postcss-px-to-viewport.git"
+    "url": "git+ssh://git@github.com/Rxdey/postcss-px-to-viewport.git"
   },
-  "bugs": "https://github.com/Rxdey/postcss-px-to-viewport/issues",
+  "bugs": {
+    "url": "https://github.com/Rxdey/postcss-px-to-viewport/issues"
+  },
   "homepage": "https://github.com/Rxdey/postcss-px-to-viewport",
   "main": "index.js",
   "keywords": [
@@ -28,5 +30,11 @@
   "dependencies": {
     "object-assign": "^4.0.1",
     "postcss": "^5.0.2"
+  },
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
