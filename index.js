@@ -30,7 +30,7 @@ module.exports = postcss.plugin('postcss-px-to-viewport-rxdey', function(options
   return function(css) {
     var path = css.source.input.file;
     var rulesPath =opts.rules.path?blacklistedPath(opts.rules.path,path):true;  // 指定了路径 只对路径下生效
-    console.log(rulesPath)
+    // console.log(rulesPath)
     var r = pxReplace(rulesPath)
     css.walkDecls(function(decl, i) {
       if (decl.value.indexOf('px') === -1) return;
@@ -81,7 +81,7 @@ function blacklistedPath(blacklist, path) {
   if (typeof blacklist === 'string') {
     blacklist = [blacklist];
   }
-  console.log(path)
+  // console.log(path)
   if (!blacklist.length) return false;
   // var pathArray = path.split('\\'); // Get filepath
   var isBlack = blacklist.some(item => {
